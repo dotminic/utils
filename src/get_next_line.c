@@ -29,10 +29,10 @@ char	*get_next_line( int fd )
       if (buffer[read_pos] == '\n')
 	{
 	  read_pos++;
-	  line[i + 1] = 0;
+	  line[i + 1] = NULL;
 	  return line;
 	}
     }
-  line[i] = 0;
+  line[i] = NULL;
   return line;
 }
